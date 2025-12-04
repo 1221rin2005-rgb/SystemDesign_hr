@@ -1,10 +1,10 @@
 @startuml
 left to right direction
-actor "Food Critic" as fc
-rectangle Restaurant {
-  usecase "Eat Food" as UC1
-  usecase "Pay for Food" as UC2
-  usecase "Drink" as UC3
+actor "Student" as fc
+rectangle el-Campus {
+  usecase "小テスト" as UC1
+  usecase "お知らせ閲覧" as UC2
+  usecase "課題提出" as UC3
 }
 fc --> UC1
 fc --> UC2
