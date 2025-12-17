@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor "Teacher" as tc
+actor "Student" as st
+package el-Campus {
+  usecase "download the document" as UC1
+  usecase "upload the documnet" as UC2
+  usecase "take the exam" as UC3
+}
+
+package UniversalPasport {
+  usecase "read the syllabus" as UC4
+  usecase "corse registration" as UC5
+  usecase "see the time table" as UC6
+}
+
+st --> UC1
+st --> UC2
+st --> UC3
+st --> UC4
+st --> UC5
+st --> UC6
+
+tc --> UC1 #line:red;line.bold;text:red
+tc --> UC2 #line:red;line.bold;text:red
+tc --> UC5 #line:red;line.bold;text:red
+tc --> UC6 #line:red;line.bold;text:red
+@enduml
